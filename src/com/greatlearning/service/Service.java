@@ -13,24 +13,17 @@ public class Service {
 		return email;
 	}
 	public char[] generatePassword() {
-	
-        String values = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi"
-                +"jklmnopqrstuvwxyz!@#$%&";
-  
+	    String values = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi"+"jklmnopqrstuvwxyz!@#$%&";
         // Using random method
         Random rndm_method = new Random();
-  
         char[] password = new char[8];
-  
         for (int i = 0; i < 8; i++)
         {
             // Use of charAt() method : to get character value
             // Use of nextInt() as it is scanning the value as int
             password[i] = values.charAt(rndm_method.nextInt(values.length()));
-  
         }
         return password;
-		
 	}
 	public void showCredentials(String email,char[] password) {
 		System.out.println("Your emailaddress is "+email);

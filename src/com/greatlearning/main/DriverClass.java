@@ -11,7 +11,6 @@ public class DriverClass{
 	public static Employee employee = new Employee("dharani","subramaniam");
 	public static Service service = new Service();
 	public static void main(String[] args) {
-		
 		displayMenu();
 		Scanner scanner = new Scanner(System.in);
 		int input = scanner.nextInt();
@@ -23,8 +22,6 @@ public class DriverClass{
 		{
 			System.out.println("chosen department is Techical");
 			department = Constants.Tech_Department;
-			
-			
 		}
 			break;
 		case 2:
@@ -32,19 +29,17 @@ public class DriverClass{
 		    
 			System.out.println("chosen department is Admin");
 			department = Constants.Admin_Department;
-			 }
+		}
 		    break;
 		case 3:
 		{
-		    
-			System.out.println("chosen department is Hr");
+		    System.out.println("chosen department is Hr");
 			department = Constants.HR_Department;
 		}
 		    break;
 		case 4:
 		{
-		    
-			System.out.println("chosen department is Legal");
+		   System.out.println("chosen department is Legal");
 			department = Constants.Legal_Department;
 		}
 		    break;
@@ -57,9 +52,7 @@ public class DriverClass{
 			service.showCredentials(email,password);
 		}
 		scanner.close();
-		
-		
-	}
+	 }
 	
 	private static void displayMenu() {
 		System.out.println("Please enter the department from the following:");
@@ -68,7 +61,4 @@ public class DriverClass{
 		System.out.println("3.Human Resource");
 		System.out.println("4.Legal");
 	}
-	
-	
-
 }
